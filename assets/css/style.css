@@ -1,0 +1,334 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: delay-apparition 4s;
+          animation: delay-apparition 4s;
+  position: fixed;
+  top: 0%;
+  width: 98%;
+  overflow: hidden;
+  margin-left: 8px;
+}
+
+header .logo {
+  -webkit-animation: rotation 3.8s;
+          animation: rotation 3.8s;
+  text-align: center;
+  width: 10%;
+}
+
+header .navbar {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .menu {
+  -webkit-animation: rotation 4s;
+          animation: rotation 4s;
+  height: 100%;
+  margin-right: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 52%;
+}
+
+header .wordwild {
+  -webkit-animation: rotation 4.2s;
+          animation: rotation 4.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8%;
+}
+
+header .wordwild .language {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background-color: #dedcd8;
+}
+
+@-webkit-keyframes delay-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes delay-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(20deg) translateX(100px);
+            transform: rotate(20deg) translateX(100px);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  90% {
+    -webkit-transform: rotate(20deg) translateX(100px);
+            transform: rotate(20deg) translateX(100px);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(20deg) translateX(100px);
+            transform: rotate(20deg) translateX(100px);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  90% {
+    -webkit-transform: rotate(20deg) translateX(100px);
+            transform: rotate(20deg) translateX(100px);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
+
+.hero-title {
+  position: absolute;
+  font-size: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-title span:nth-child(0n+1) {
+  -webkit-transform: translateX(-360%) translateY(20%) rotate(-0.1turn);
+          transform: translateX(-360%) translateY(20%) rotate(-0.1turn);
+}
+
+.hero-title span:nth-child(0n+2) {
+  -webkit-transform: translateX(-360%) translateY(135%) rotate(0.05turn);
+          transform: translateX(-360%) translateY(135%) rotate(0.05turn);
+}
+
+.hero-title span:nth-child(0n+3) {
+  -webkit-transform: translateX(-160%) translateY(-175%) rotate(-0.1turn);
+          transform: translateX(-160%) translateY(-175%) rotate(-0.1turn);
+}
+
+.hero-title span:nth-child(0n+4) {
+  -webkit-transform: translateX(40%) translateY(140%) rotate(-0.05turn);
+          transform: translateX(40%) translateY(140%) rotate(-0.05turn);
+}
+
+.hero-title span:nth-child(0n+5) {
+  -webkit-transform: translateX(370%) translateY(-10%) rotate(-0.05turn);
+          transform: translateX(370%) translateY(-10%) rotate(-0.05turn);
+}
+
+.hero-title span:nth-child(0n+1), .hero-title span:nth-child(0n+2), .hero-title span:nth-child(0n+3), .hero-title span:nth-child(0n+4), .hero-title span:nth-child(0n+5) {
+  -webkit-animation: explode 2s;
+          animation: explode 2s;
+}
+
+@-webkit-keyframes explode {
+  0% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  70% {
+    letter-spacing: 0px;
+  }
+  80% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+    letter-spacing: -10px;
+  }
+  100% {
+  }
+}
+
+@keyframes explode {
+  0% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  70% {
+    letter-spacing: 0px;
+  }
+  80% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+    letter-spacing: -10px;
+  }
+  100% {
+  }
+}
+
+.main-text {
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 32px;
+  width: 53%;
+}
+
+.main-text .box-line {
+  overflow: hidden;
+}
+
+.main-text .first-line {
+  -webkit-animation: opacity 1.8s;
+          animation: opacity 1.8s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.main-text .second-line {
+  -webkit-animation: opacity 2s;
+          animation: opacity 2s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.main-text .third-line {
+  -webkit-animation: opacity 2.2s;
+          animation: opacity 2.2s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.main-text .fourth-line {
+  -webkit-animation: opacity 2.4s;
+          animation: opacity 2.4s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.main-text .fifth-line {
+  -webkit-animation: opacity 2.6s;
+          animation: opacity 2.6s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.main-text .first-line, .main-text .second-line, .main-text .third-line, .main-text .fourth-line, .main-text .fifth-line {
+  overflow: hidden;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0.01turn);
+            transform: rotate(0.01turn);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: rotate(0.01turn);
+            transform: rotate(0.01turn);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0.01turn);
+            transform: rotate(0.01turn);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: rotate(0.01turn);
+            transform: rotate(0.01turn);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+/*# sourceMappingURL=style.css.map */

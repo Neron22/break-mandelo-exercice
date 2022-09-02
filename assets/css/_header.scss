@@ -1,0 +1,70 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: delay-apparition 4s;
+  position:fixed;
+  top: 0%;
+  width: 98%;
+  overflow: hidden;
+  margin-left: 8px;
+  .logo {
+    animation: rotation 3.8s;
+    text-align: center;
+    width: 10%;
+  }
+  .navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .menu {
+      animation: rotation 4s;
+      height: 100%;
+      margin-right: 140px;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      list-style: none;
+      width: 52%;
+    }
+  }
+  .wordwild {
+    animation: rotation 4.2s;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 8%;
+    .language {
+      padding: 6px 20px;
+      border-radius: 20px;
+      background-color: #dedcd8;
+    }
+  }
+}
+
+@keyframes delay-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(20deg) translateX(100px);
+    transform-origin: left;
+  }
+  90% {
+    transform: rotate(20deg) translateX(100px);
+    transform-origin: left;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: left;
+  }
+}

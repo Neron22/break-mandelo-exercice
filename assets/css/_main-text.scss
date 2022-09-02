@@ -1,0 +1,52 @@
+.main-text {
+  position: absolute;
+  text-align:left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  width: 53%;
+  .box-line {
+    overflow: hidden;
+  }
+  .first-line {
+    animation: opacity 1.8s;
+    transform: rotate(0deg);
+  }
+  .second-line {
+    animation: opacity 2s;
+    transform: rotate(0deg);
+  }
+  .third-line {
+    animation: opacity 2.2s;
+    transform: rotate(0deg);
+  }
+  .fourth-line {
+    animation: opacity 2.4s;
+    transform: rotate(0deg);
+  }
+  .fifth-line {
+    animation: opacity 2.6s;
+    transform: rotate(0deg);
+  }
+  .first-line, .second-line, .third-line, .fourth-line, .fifth-line {
+    overflow: hidden;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: rotate(0.01turn);
+    transform-origin: left;
+  }
+  90% {
+    opacity: 0;
+    transform: rotate(0.01turn);
+    transform-origin: left;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    transform-origin: left;
+  }
+}
